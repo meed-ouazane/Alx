@@ -1,6 +1,5 @@
 #!/bin/bash 
 name=$(history | tail -n 3 | grep -v 'grep' | grep vi | cut -c 8- | cut -c 3-)
-mkdir '$name'
 git add $name
 git commit -m '$name'
 git push
